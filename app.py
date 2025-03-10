@@ -108,7 +108,7 @@ st.markdown("<div class='subtitle'>Middle-aged and senior consumers with high sp
 
 # Hot-Deal
 st.markdown("<div class='subtitle'>❄️ Winter Hot Deal ❄️</div>", unsafe_allow_html=True)
-st.image("https://i.imgur.com/oVnl6r8.png", use_container_width=True)
+st.image("https://i.imgur.com/y0JPr9L.png", use_container_width=True)
 
 # Product categories and their respective images with titles and quantity
 categories = {
