@@ -110,35 +110,33 @@ st.markdown("<div class='subtitle'>Middle-aged and senior consumers with high sp
 st.markdown("<div class='subtitle'>❄️ Winter Hot Deal ❄️</div>", unsafe_allow_html=True)
 st.image("https://i.imgur.com/y0JPr9L.png", use_container_width=True)
 
-# Product categories and their respective images with titles and quantity
+# Product categories and their respective images with titles, quantity and price range
 categories = {
    "Accessories 💎": [
-    {"url": "https://i.imgur.com/cTGUlUo.png", "title": "Jewelry", "quantity": 58},
-    {"url": "https://i.imgur.com/a8zy6bi.png", "title": "Gloves", "quantity": 45},
-    {"url": "https://i.imgur.com/9CTL0E3.png", "title": "Sunglasses", "quantity": 45},
-    {"url": "https://i.imgur.com/FGI4Qp0.png", "title": "Scarf", "quantity": 44},
-    {"url": "https://i.imgur.com/Icryt0V.png", "title": "Belt", "quantity": 40},
-    {"url": "https://i.imgur.com/KwqErQ3.png", "title": "Handbag", "quantity": 36}
+    {"url": "https://i.imgur.com/cTGUlUo.png", "title": "Jewelry", "quantity": 58, "price_range": "10 - 200"},
+    {"url": "https://i.imgur.com/a8zy6bi.png", "title": "Gloves", "quantity": 45, "price_range": "20 - 150"},
+    {"url": "https://i.imgur.com/9CTL0E3.png", "title": "Sunglasses", "quantity": 45, "price_range": "30 - 180"},
+    {"url": "https://i.imgur.com/FGI4Qp0.png", "title": "Scarf", "quantity": 44, "price_range": "15 - 120"},
+    {"url": "https://i.imgur.com/Icryt0V.png", "title": "Belt", "quantity": 40, "price_range": "20 - 100"},
+    {"url": "https://i.imgur.com/KwqErQ3.png", "title": "Handbag", "quantity": 36, "price_range": "50 - 200"}
     ],
     "Clothings 👔": [
-        {"url": "https://i.imgur.com/e5bDb7f.png", "title": "Sweater", "quantity": 54},
-        {"url": "https://i.imgur.com/SGCYXEY.png", "title": "Dress", "quantity": 50},
-        {"url": "https://i.imgur.com/4y0Uz7i.png", "title": "Blouse", "quantity": 49},
-        {"url": "https://i.imgur.com/aRim0nX.png", "title": "Shorts", "quantity": 49},
-        {"url": "https://i.imgur.com/TJR7Uuv.jpeg", "title": "Pants", "quantity": 48},
-        {"url": "https://i.imgur.com/IttHh9c.png", "title": "Shirt", "quantity": 45}
-        
+        {"url": "https://i.imgur.com/e5bDb7f.png", "title": "Sweater", "quantity": 54, "price_range": "100 - 180"},
+        {"url": "https://i.imgur.com/SGCYXEY.png", "title": "Dress", "quantity": 50, "price_range": "80 - 200"},
+        {"url": "https://i.imgur.com/4y0Uz7i.png", "title": "Blouse", "quantity": 49, "price_range": "50 - 150"},
+        {"url": "https://i.imgur.com/aRim0nX.png", "title": "Shorts", "quantity": 49, "price_range": "30 - 120"},
+        {"url": "https://i.imgur.com/TJR7Uuv.jpeg", "title": "Pants", "quantity": 48, "price_range": "60 - 150"},
+        {"url": "https://i.imgur.com/IttHh9c.png", "title": "Shirt", "quantity": 45, "price_range": "40 - 120"}
     ],
     "Footwear 👞": [
-        {"url": "https://i.imgur.com/2apmT1k.png", "title": "Boots", "quantity": 48},
-        {"url": "https://i.imgur.com/SU3x3Sk.png", "title": "Shoes", "quantity": 43},
-        {"url": "https://i.imgur.com/zyaufwn.png", "title": "Sneakers", "quantity": 38},
-        {"url": "https://i.imgur.com/xbuOmUc.png", "title": "Sandals", "quantity": 35}
-
+        {"url": "https://i.imgur.com/2apmT1k.png", "title": "Boots", "quantity": 48, "price_range": "120 - 200"},
+        {"url": "https://i.imgur.com/SU3x3Sk.png", "title": "Shoes", "quantity": 43, "price_range": "70 - 180"},
+        {"url": "https://i.imgur.com/zyaufwn.png", "title": "Sneakers", "quantity": 38, "price_range": "90 - 150"},
+        {"url": "https://i.imgur.com/xbuOmUc.png", "title": "Sandals", "quantity": 35, "price_range": "30 - 100"}
     ],
     "Outerwear 🧥": [
-        {"url": "https://i.imgur.com/7Nqp15f.png", "title": "Coat", "quantity": 50},
-        {"url": "https://i.imgur.com/EK1jESH.png", "title": "Jacket", "quantity": 35},
+        {"url": "https://i.imgur.com/7Nqp15f.png", "title": "Coat", "quantity": 50, "price_range": "150 - 200"},
+        {"url": "https://i.imgur.com/EK1jESH.png", "title": "Jacket", "quantity": 35, "price_range": "100 - 180"},
     ]
 }
 
@@ -164,6 +162,7 @@ for category, products in categories.items():
                         <img src='{product["url"]}' alt='{product["title"]}'>
                         <div class='product-name'>{product["title"]}</div>
                         <div class='product-quantity'>Quantity: {product["quantity"]}</div>
+                        <div class='product-price'>Price: {product["price_range"]}</div>
                     </div>
                 """, unsafe_allow_html=True)
             index += 1
@@ -182,6 +181,7 @@ for category, products in categories.items():
                         <img src='{product["url"]}' alt='{product["title"]}'>
                         <div class='product-name'>{product["title"]}</div>
                         <div class='product-quantity'>Quantity: {product["quantity"]}</div>
+                        <div class='product-price'>Price: {product["price_range"]}</div>
                     </div>
                 """, unsafe_allow_html=True)
             index += 1
