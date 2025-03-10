@@ -123,9 +123,9 @@ categories = {
     "Clothings 👔": [
         {"url": "https://i.imgur.com/e5bDb7f.png", "title": "Sweater", "quantity": 54, "price_range": "100 - 180"},
         {"url": "https://i.imgur.com/SGCYXEY.png", "title": "Dress", "quantity": 50, "price_range": "80 - 200"},
-        {"url": "https://i.imgur.com/4y0Uz7i.png", "title": "Blouse", "quantity": 49, "price_range": "50 - 150"},
-        {"url": "https://i.imgur.com/aRim0nX.png", "title": "Shorts", "quantity": 49, "price_range": "30 - 120"},
-        {"url": "https://i.imgur.com/TJR7Uuv.jpeg", "title": "Pants", "quantity": 48, "price_range": "60 - 150"},
+        {"url": "https://i.imgur.com/aTeg6mo.png", "title": "Blouse", "quantity": 49, "price_range": "50 - 150"},
+        {"url": "https://i.imgur.com/Xkv6BzX.png", "title": "Shorts", "quantity": 49, "price_range": "30 - 120"},
+        {"url": "https://i.imgur.com/Vb8y1Zh.png", "title": "Pants", "quantity": 48, "price_range": "60 - 150"},
         {"url": "https://i.imgur.com/IttHh9c.png", "title": "Shirt", "quantity": 45, "price_range": "40 - 120"}
     ],
     "Footwear 👞": [
